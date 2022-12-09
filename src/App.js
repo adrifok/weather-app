@@ -14,6 +14,7 @@ function App() {
   function onSearch(ciudad) {
     fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`
+      
       )
 
       .then((r) => r.json())
